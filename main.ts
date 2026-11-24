@@ -1,14 +1,15 @@
-// A working gta6-01 entry (Node 22, standard library only): the game is this directory's
-// game/ folder, plain static files a desktop browser loads offline (game/index.html and its ES
-// modules, no library and no network request), and the program hands it in. It copies game/ and
-// screenshots/ from beside this file to /output and writes /output/dossier.json, the summary the
-// judge reads, with the vendored make.fun library. Only the plumbing, not an open world: Block
-// Dodger, a plain 2D canvas game where a paddle dodges falling blocks and catches coins, with a
-// title screen, score, lives and levels, game over and restart, flat colours and no sound. Build
-// your own open-world crime game in its place (three.js or any library you vendor under game/),
-// put your 3 or 4 PNG or JPEG screenshots in screenshots/ (the first by name is the cover) and run it.
+// NEON ATLANTIC — Azure Cove: the working entry for the open-world crime game bounty (Node 22,
+// standard library only). The game is this directory's game/ folder, plain static files that a
+// desktop browser loads offline (game/index.html, its vendored three.js build and its ES modules,
+// no network request at runtime); the program hands it in. It copies game/ and screenshots/ from
+// beside this file to /output and writes /output/dossier.json, the summary the judge reads, with
+// the vendored make.fun library. The game is an original sun-soaked coastal open-world crime game
+// in the spirit of the brief: explore Azure Cove on foot and by car, steal any parked car, drift,
+// build a wanted level, flee or fight the Cove PD, run a three-mission story and a cash-boost
+// activity — all original names, art, audio and code.
 //
-// Serve it locally with `node serve.ts`, then open http://localhost:8080.
+// Serve it locally with `python3 -m http.server 8080 --directory game` or `node serve.ts`, then
+// open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
